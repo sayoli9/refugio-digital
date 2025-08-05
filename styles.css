@@ -1,0 +1,90 @@
+:root {
+  --bg-light: #ffffff;
+  --text-light: #222;
+  --bg-dark: #121212;
+  --text-dark: #eee;
+  --accent: #ff6f61;
+}
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  transition: background 0.4s, color 0.4s;
+}
+body.light-mode {
+  background: var(--bg-light);
+  color: var(--text-light);
+}
+body.dark-mode {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+}
+header {
+  background: var(--accent);
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+#theme-toggle {
+  background: none;
+  color: white;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #ffe0e6, #ffece8);
+}
+.section {
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+.tips li {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+.gpt-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input[type="text"] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+button#ask-btn {
+  padding: 12px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.response {
+  margin-top: 15px;
+  background: #f9f9f9;
+  border-radius: 6px;
+  padding: 15px;
+  font-style: italic;
+}
+footer {
+  text-align: center;
+  padding: 30px 10px;
+  background: var(--accent);
+  color: white;
+}

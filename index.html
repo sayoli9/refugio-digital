@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ReD – Refugio Digital</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="light-mode">
+  <header>
+    <nav>
+      <div class="logo">ReD</div>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#tips">Tips</a></li>
+        <li><a href="#gpt">Tu consejera</a></li>
+      </ul>
+      <button id="theme-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <section id="inicio" class="hero">
+    <h1>Hola, soy ReD 💖</h1>
+    <p>Tu refugio digital para explorar, aprender y cuidarte en internet ✨</p>
+  </section>
+
+  <section id="tips" class="section">
+    <h2>Consejos rápidos 🧠</h2>
+    <ul class="tips">
+      <li>💡 Usa contraseñas largas y únicas. ¡Es tu primera barrera de defensa!</li>
+      <li>🫶 Si algo no te vibra bien, puedes salirte de esa conversación digital. ¡Tu intuición vale!</li>
+      <li>🌈 Cuida tu espacio en línea como cuidas tu cuarto: solo deja entrar a quien confíes.</li>
+    </ul>
+  </section>
+
+  <section id="gpt" class="section gpt-section">
+    <h2>🗣️ Pregúntale a ReD</h2>
+    <div class="gpt-box">
+      <input type="text" id="user-input" placeholder="¿Qué quieres saber hoy?">
+      <button id="ask-btn">Preguntar</button>
+      <div id="response" class="response"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>🌈 Hecho con amor y respeto por ReD – Refugio Digital © 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="gpt-sim.js"></script>
+</body>
+</html>
